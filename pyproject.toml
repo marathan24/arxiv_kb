@@ -2,7 +2,7 @@
 name = "arxiv_kb"
 version = "0.1.0"
 description = "Arxiv Knowledge Base"
-authors = ["Ashwarya Maratha marathaashwarya@gmail.com"]
+authors = ["Ashwarya Maratha <marathaashwarya@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
