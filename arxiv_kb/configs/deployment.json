@@ -1,6 +1,6 @@
 [
     {
-        "name": "kb_deployment_1",
+        "name": "kb_deployment_arxiv",
         "module": {"name": "arxiv_kb"},
         "node": {"ip": "localhost"},
         "config": {
