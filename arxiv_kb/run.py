@@ -217,7 +217,7 @@ if __name__ == "__main__":
     }
 
     module_run = {
-        "inputs": inputs_dict["scrape_and_add"],
+        "inputs": inputs_dict["init"], # After initializing, change this to the desired function step by step. If deleted, use init again.
         "deployment": deployment,
         "consumer_id": naptha.user.id,
         "signature": sign_consumer_id(naptha.user.id, os.getenv("PRIVATE_KEY"))
