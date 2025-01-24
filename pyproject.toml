@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "arxiv_daily_summary"
+name = "arxiv_kb"
 version = "0.1.0"
-description = "Arxiv Summary for top papers in Decentralized AI daily"
+description = "Arxiv Knowledge Base"
 authors = ["Ashwarya Maratha marathaashwarya@gmail.com"]
 readme = "README.md"
 
