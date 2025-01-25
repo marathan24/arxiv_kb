@@ -7,7 +7,7 @@ from naptha_sdk.storage.storage_provider import StorageProvider
 from naptha_sdk.storage.schemas import CreateStorageRequest, ReadStorageRequest, DeleteStorageRequest, ListStorageRequest
 from naptha_sdk.user import sign_consumer_id
 
-from schemas import InputSchema, ScrapeArxivInput
+from arxiv_kb.schemas import InputSchema, ScrapeArxivInput
 
 logger = logging.getLogger(__name__)
 
