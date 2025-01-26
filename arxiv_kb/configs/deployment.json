@@ -4,12 +4,14 @@
         "module": {"name": "arxiv_kb"},
         "node": {"ip": "localhost"},
         "config": {
-            "storage_type": "db",
-            "path": "arxiv_kb",
-            "schema": {
-                "id": {"type": "INTEGER", "primary_key": true},
-                "title": {"type": "TEXT"},
-                "abstract": {"type": "TEXT"}
+            "storage_config":{
+                "storage_type": "db",
+                "path": "arxiv_kb",
+                "storage_schema": {
+                    "id": {"type": "INTEGER", "primary_key": true},
+                    "title": {"type": "TEXT"},
+                    "abstract": {"type": "TEXT"}
+                }
             }
         }
     }

@@ -17,9 +17,9 @@ class ArxivKB:
         self.deployment = deployment
         self.config = self.deployment.config
         self.storage_provider = StorageProvider(self.deployment.node)
-        self.storage_type = self.config.storage_type
-        self.table_name = self.config.path
-        self.schema = self.config.schema
+        self.storage_type = self.config.storage_config.storage_type
+        self.table_name = self.config.storage_config.path
+        self.schema = self.config.storage_config.storage_schema
     
     async def init(self, *args, **kwargs):
         """Initialize the knowledge base by creating the table"""
@@ -135,9 +135,9 @@ async def create(deployment: KBDeployment):
     Create the Arxiv Knowledge Base table
     """
     storage_provider = StorageProvider(deployment.node)
-    storage_type = deployment.config.storage_type
-    table_name = deployment.config.path
-    schema = {"schema": deployment.config.schema}
+    storage_type = deployment.config.storage_config.storage_type
+    table_name = deployment.config.storage_config.path
+    schema = {"schema": deployment.config.storage_config.storage_schema}
 
     logger.info(f"Creating {storage_type} at {table_name} with schema {schema}")
 
